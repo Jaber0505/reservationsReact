@@ -20,12 +20,11 @@ function App() {
     <div style={styles.container}>
       <h1 style={styles.title} className="fade-in">🎉 Joyeux Anniversaire Tata 🎉</h1>
       <img
-        src="https://cdn.pixabay.com/photo/2017/08/30/07/52/birthday-2697462_1280.jpg"
+        src="https://123cartes.com/wp-content/uploads/2016/05/image-joyeux-anniversaire.jpg"
         alt="Anniversaire"
         style={styles.image}
         className="zoom-hover"
       />
-      <p style={styles.apiMessage}>{message}</p>
 
       <button onClick={revealSurprise} style={styles.button}>
         Clique pour une surprise 🎈
