@@ -8,10 +8,7 @@ function App() {
     axios
       .get(`${process.env.REACT_APP_API_URL}/test/`)
       .then((res) => setMessage(res.data.message))
-      .catch((err) => {
-        console.error('Erreur API :', err);
-        setMessage("Erreur d'appel API");
-      });
+      .catch(() => setMessage("Erreur API"));
   }, []);
 
   return (
