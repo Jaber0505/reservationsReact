@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { SidebarContext } from '../context/SidebarContext';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 const Header = () => {
@@ -11,7 +12,9 @@ const Header = () => {
     <header className="relative bg-white text-black px-4 py-3 shadow-md h-20">
       {/* Logo parfaitement centré */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <img src={logo} alt="Logo" className="h-16 w-auto" />
+        <Link to="/" className="pointer-events-auto">
+          <img src={logo} alt="Logo" className="h-16 w-auto" />
+        </Link>
       </div>
 
       {/* Bouton ☰ à gauche */}
