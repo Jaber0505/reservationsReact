@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title} className="fade-in">🎉 Joyeux Anniversaire 🎉</h1>
+      <h1 style={styles.title} className="fade-in">🎉 Joyeux Anniversaire Tata 🎉</h1>
       <img
         src="https://cdn.pixabay.com/photo/2017/08/30/07/52/birthday-2697462_1280.jpg"
         alt="Anniversaire"
