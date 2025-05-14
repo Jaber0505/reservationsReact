@@ -8,8 +8,6 @@ const RegisterForm = ({ redirectTo = '/profil' }) => {
     username: '',
     password: '',
     email: '',
-    first_name: '',
-    last_name: ''
   });
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -59,24 +57,6 @@ const RegisterForm = ({ redirectTo = '/profil' }) => {
             onChange={handleChange}
             className="w-full border px-4 py-2 rounded-md"
             required
-          />
-          <input
-            type="text"
-            name="first_name"
-            placeholder="Prénom"
-            autoComplete="given-name"
-            value={formData.first_name}
-            onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
-          />
-          <input
-            type="text"
-            name="last_name"
-            placeholder="Nom"
-            autoComplete="family-name"
-            value={formData.last_name}
-            onChange={handleChange}
-            className="w-full border px-4 py-2 rounded-md"
           />
           <input
             type="password"
