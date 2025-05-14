@@ -14,9 +14,11 @@ export const SidebarProvider = ({ children }) => {
         setIsOpen(false);
       }
     };
+
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside);
     }
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };

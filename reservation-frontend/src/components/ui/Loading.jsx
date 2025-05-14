@@ -1,5 +1,5 @@
-// src/components/Loading.jsx
 import React from 'react';
+import CenteredContainer from 'components/ui/CenteredContainer';
 
 const spinnerStyle = {
   border: '6px solid #f3f3f3',
@@ -11,15 +11,6 @@ const spinnerStyle = {
   margin: 'auto',
 };
 
-const containerStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100vh',
-  backgroundColor: '#f8f9fa',
-};
-
 const textStyle = {
   marginTop: '1rem',
   fontSize: '1.2rem',
@@ -29,9 +20,9 @@ const textStyle = {
 
 export default function Loading() {
   return (
-    <div style={containerStyle}>
+    <CenteredContainer>
       <div style={spinnerStyle} />
       <p style={textStyle}>Chargement...</p>
-    </div>
+    </CenteredContainer>
   );
 }
